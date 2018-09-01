@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 class Header extends React.Component {
   state = {
@@ -19,7 +20,7 @@ class Header extends React.Component {
         style={{ borderBottom: "solid 1px #dddddd" }}
       >
         <div className="navbar-brand">
-          <a className="navbar-item">
+          <NavLink className="navbar-item" to="/" activeClassName="is-active">
             <img
               style={{
                 borderTopLeftRadius: "50%",
@@ -33,7 +34,7 @@ class Header extends React.Component {
               alt="Company logo"
             />
             <span>My Company</span>
-          </a>
+          </NavLink>
           <button className="button navbar-burger" onClick={this.toggleNav}>
             <span />
             <span />
@@ -49,7 +50,13 @@ class Header extends React.Component {
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">About Us</a>
               <div className="navbar-dropdown">
-                <a className="navbar-item">Overview</a>
+                <NavLink
+                  className="navbar-item"
+                  to="/blog"
+                  activeClassName="is-active"
+                >
+                  Overview
+                </NavLink>
                 <hr className="navbar-divider" />
                 <a className="navbar-item">The Team</a>
                 <a className="navbar-item">Careers</a>
