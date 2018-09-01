@@ -48,48 +48,64 @@ class Header extends React.Component {
         >
           <div className="navbar-start">
             <div className="navbar-item has-dropdown is-hoverable">
-              <a className="navbar-link">About Us</a>
+              <NavLink className="navbar-link" to="/about">
+                About Us
+              </NavLink>
               <div className="navbar-dropdown">
                 <NavLink
                   className="navbar-item"
-                  to="/blog"
+                  to="/overview"
                   activeClassName="is-active"
                 >
                   Overview
                 </NavLink>
                 <hr className="navbar-divider" />
-                <a className="navbar-item">The Team</a>
-                <a className="navbar-item">Careers</a>
+                <NavLink className="navbar-item" to="/team">
+                  The Team
+                </NavLink>
+                <NavLink className="navbar-item" to="/careers">
+                  Careers
+                </NavLink>
               </div>
             </div>
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">Product</a>
               <div className="navbar-dropdown">
-                <a className="navbar-item">Tour</a>
+                <NavLink className="navbar-item" to="/tour">
+                  Tour
+                </NavLink>
                 <hr className="navbar-divider" />
-                <a className="navbar-item">Training Services</a>
-                <a className="navbar-item">Add-ons</a>
+                <NavLink className="navbar-item" to="/training">
+                  Training Services
+                </NavLink>
+                <NavLink className="navbar-item" to="/add-ons">
+                  Add-ons
+                </NavLink>
               </div>
             </div>
             <div className="navbar-item has-dropdown is-hoverable">
               <a className="navbar-link">Pricing Plan</a>
               <div className="navbar-dropdown">
-                <a className="navbar-item">Individual</a>
+                <NavLink className="navbar-item" to="/individual-pricing">
+                  Individual
+                </NavLink>
                 <hr className="navbar-divider" />
-                <a className="navbar-item">Company</a>
+                <NavLink className="navbar-item" to="/corporate-pricing">
+                  Company
+                </NavLink>
               </div>
             </div>
           </div>
           <div className="navbar-end">
-            <a className="navbar-item" href="#">
+            <NavLink className="navbar-item" to="/contact">
               <p>Contact Us</p>
               <span className="icon has-text-info" style={{ color: "#0084FF" }}>
                 <i class="fas fa-envelope" />
               </span>
-            </a>
-            <a className="navbar-item" href="#">
+            </NavLink>
+            <NavLink className="navbar-item" to="/sign-up">
               Sign Up Free
-            </a>
+            </NavLink>
           </div>
         </div>
       </nav>
