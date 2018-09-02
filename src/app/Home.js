@@ -38,7 +38,7 @@ const services = [
 
 const Home = () => {
   return (
-    <div>
+    <div className="wrapper">
       <section className="hero is-large">
         <div className="hero-body is-fullheight">
           <div className="container">
@@ -56,20 +56,23 @@ const Home = () => {
       </section>
       <div className="container">
         <p>Our Services</p>
-        {services.map((service, index) => {
-          return (
-            <Solutions
-              key={index}
-              title={service.title}
-              src={service.src}
-              description={service.description}
-            />
-          );
-        })}
-        <div>
-          <SignUp />
+        <div className="services">
+          {services.map((service, index) => {
+            return (
+              <Solutions
+                key={index}
+                title={service.title}
+                src={service.src}
+                description={service.description}
+              />
+            );
+          })}
         </div>
-        <Customers />
+        <div className="container">
+          <p>Our Clients</p>
+          <Customers />
+        </div>
+
         <MediaMentions />
       </div>
     </div>

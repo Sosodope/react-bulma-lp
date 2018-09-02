@@ -6420,5 +6420,59 @@ label.panel-block {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
+body {
+  color: #202020; }
+
+.wrapper .container {
+  margin-top: 50px; }
+
+.brand {
+  color: #202020;
+  font-weight: bold; }
+
+.title {
+  font-size: 58px;
+  line-height: 68px;
+  color: #202020; }
+
+.subtitle {
+  font-size: 32px;
+  line-height: 52px;
+  color: #4f4f4f; }
+
 .button.is-primary {
   background-color: #5528ff; }
+
+.services {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
+  grid-gap: 30px; }
+
+.solutions {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-gap: 1em; }
+  .solutions > * {
+    align-self: center; }
+  .solutions h4 {
+    font-size: 33px;
+    line-height: 28px;
+    paragraph-spacing: 48px; }
+  .solutions p {
+    color: #b2b2b2;
+    font-size: 14px;
+    line-height: 16px; }
+
+.logos {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px; }
+
+.level-item {
+  margin-bottom: 60px; }
+
+.navbar {
+  margin-left: 60px;
+  margin-right: 60px; }
