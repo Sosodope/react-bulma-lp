@@ -1,14 +1,12 @@
 import React from "react";
 
-const Solutions = () => {
+const Solutions = props => {
   return (
     <section className="section">
       <div className="container">
-        <h1 className="title">Section</h1>
-        <h2 className="subtitle">
-          A simple container to divide your page into <strong>sections</strong>,
-          like the one you're currently reading
-        </h2>
+        <img src={props.src} alt={props.title} />
+        <h4 className="title">{props.title}</h4>
+        <p className="subtitle">{props.description}</p>
       </div>
     </section>
   );

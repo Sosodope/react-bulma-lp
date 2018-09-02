@@ -1,5 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import Logo from "./../assets/images/logo.png";
 
 class Header extends React.Component {
   state = {
@@ -29,7 +30,7 @@ class Header extends React.Component {
                 borderBottomRightRadius: "50%",
                 marginRight: 15
               }}
-              src="https://images.unsplash.com/photo-1530779999716-9271dcb59efa?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9904288c84dfbe031e87da5892dc9e02&auto=format&fit=crop&w=1473&q=80"
+              src={Logo}
               width="30px"
               alt="Company logo"
             />
@@ -46,7 +47,7 @@ class Header extends React.Component {
             this.state.isActive ? "navbar-menu is-active" : "navbar-menu"
           }
         >
-          <div className="navbar-start">
+          <div className="navbar-end">
             <div className="navbar-item has-dropdown is-hoverable">
               <NavLink className="navbar-link" to="/about">
                 About Us
@@ -95,8 +96,13 @@ class Header extends React.Component {
                 </NavLink>
               </div>
             </div>
+            <div className="navbar-item">
+              <NavLink className="navbar-item button is-primary" to="/sign-up">
+                Sign Up Free
+              </NavLink>
+            </div>
           </div>
-          <div className="navbar-end">
+          {/* <div className="navbar-end">
             <NavLink className="navbar-item" to="/contact">
               <p>Contact Us</p>
               <span className="icon has-text-info" style={{ color: "#0084FF" }}>
@@ -106,7 +112,7 @@ class Header extends React.Component {
             <NavLink className="navbar-item" to="/sign-up">
               Sign Up Free
             </NavLink>
-          </div>
+          </div> */}
         </div>
       </nav>
     );
