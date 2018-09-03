@@ -1,7 +1,7 @@
 import React from "react";
 import Solutions from "./layout/Solutions";
 import MediaMentions from "./layout/MediaMentions";
-import SignUp from "./layout/SignUp";
+import Team from "./layout/Team";
 import Customers from "./layout/Customers";
 import { NavLink } from "react-router-dom";
 import layers from "./assets/images/layers.svg";
@@ -54,8 +54,8 @@ const Home = () => {
           </div>
         </div>
       </section>
-      <div className="container">
-        <p>Our Services</p>
+      <div className="container titled-container">
+        <p className="container-titles">Our Services</p>
         <div className="services">
           {services.map((service, index) => {
             return (
@@ -68,12 +68,14 @@ const Home = () => {
             );
           })}
         </div>
-        <div className="container">
-          <p>Our Clients</p>
+        <div className="container titled-container">
+          <p className="container-titles">Our Clients</p>
           <Customers />
         </div>
-
-        <MediaMentions />
+        <div className="container titled-container">
+          <p className="container-titles">Our Team</p>
+          <Team />
+        </div>
       </div>
     </div>
   );
