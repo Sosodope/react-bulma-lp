@@ -62,3 +62,39 @@ body {
   margin-left: 60px;
   margin-right: 60px;
 }
+.team {
+  margin-top: 30px;
+  margin-bottom: 50px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+.team .content h4 {
+  text-align: left;
+}
+.level-item .content {
+  margin-left: 25px;
+}
+.name {
+  font-size: 28px;
+  line-height: 33px;
+}
+.role {
+  color: #b2b2b2;
+  font-size: 14px;
+  line-height: 16px;
+}
+@media (max-width: 760px) {
+  .team {
+    grid-template-columns: 1fr;
+  }
+}
+.container-titles {
+  background: white;
+  position: absolute;
+  top: -24px;
+  padding: 10px 5px;
+}
+.titled-container {
+  border-top: 1px solid black;
+}
