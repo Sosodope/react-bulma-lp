@@ -93,8 +93,32 @@ body {
   background: white;
   position: absolute;
   top: -24px;
+  left: 20px;
   padding: 10px 5px;
 }
 .titled-container {
-  border-top: 1px solid black;
+  border-top: 1px solid #c2c2c2;
+  color: #c2c2c2;
+}
+.footer {
+  padding: 1rem 1.5rem 1rem;
+}
+.footer .content {
+  display: flex;
+  justify-content: space-between;
+}
+.footer img {
+  width: 30px;
+  height: 30px;
+}
+.social {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+  .svg-inline--fa {
+    color: #c2c2c2;
+    &:hover {
+      color: #363636;
+    }
+  }
 }
